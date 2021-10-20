@@ -1,0 +1,320 @@
+body
+        {
+            margin: 0;
+            padding:0;
+            overflow-x: hidden;
+        }
+        .overlay 
+        {
+           height: 100%;
+           width: 0;
+           position: fixed;
+           z-index: 1;
+           top: 0;
+           left:0;
+           background-color: rgb(0,0,0);
+           background-color: rgba(0,0,0, 0.9);
+           overflow-x: hidden;
+           //border:1px solid red;
+           transition: 0.3s;
+        }
+        .overlay-content
+        {
+           position: relative;
+           top: 0;
+           height: 100vh;
+           width: 100%;
+           text-align: center;
+           //margin-top: 5px;
+           // border:1px solid white;
+         }
+        .overlay .closebtn 
+        {
+           position: absolute;
+           margin-top: -8px;
+           right: 125px;
+           font-size: 60px;
+            color: white;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+        .overlay .closebtn:hover
+        {
+           color:crimson;
+        }
+        .input-container 
+        {
+           display: -ms-flexbox; /* IE10 */
+           display: flex;
+           width: 100%;
+           //border:1px solid red;
+           margin-bottom: 15px;
+        }
+
+        .icons {
+           padding: 12px;
+            padding-top: 15px;
+           background: #b1d4e5;
+           color: black;
+           min-width: 50px;
+           text-align: center;
+        }
+       
+        .input-field {
+           width: 100%;
+           padding: 10px;
+           outline: none;
+            color: dimgrey;
+            font-weight: bold;
+        }
+        .input-field::placeholder
+        {
+            font-weight: normal;
+        }
+        .input-field:focus {
+           border: 2px solid #b1d4e5;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+          background-color: #b1d4e5;
+           color: black;
+           padding: 1px 20px;
+           border: none;
+           cursor: pointer;
+           width: 30%;
+            font-weight: bold;
+            height: 40px;
+           opacity: 0.9;
+        }
+
+        .btn:hover {
+           opacity: 1;
+        }
+        .scheme_choice
+        {
+            color: white;
+            padding-left: 20px;
+        }
+        input[type=radio]
+        {
+            height: 20px;
+            width:20px;
+            margin-top: 2px;
+            margin-left: 40px;
+        }
+        .diagonal
+        {
+            height: 100vh;
+            background-image: linear-gradient(to top left,white 50%, #b1d4e5 50%);
+        }
+        .sitename1
+        {
+            color: white;
+            padding: 2px 0px 0px 32px;
+            font-family:Haettenschweiler;
+            letter-spacing: 8px;
+            position: absolute;
+        }
+        .siteborder
+        {
+            width:100px;
+            height: 50px;
+            border: 2px solid white;
+            margin-top:27px;
+            margin-left: 10px;
+            position: relative;
+            float: left;
+            border-top:none;
+            
+        }
+        .sitename2
+        {
+            color:#041e42;
+            padding-top: 15px;
+            padding-left: 1px;
+            
+        }
+        .loginbox
+        {
+            width:600px;
+            min-height: 200px;
+          //border: 1px solid black;
+            box-sizing: border-box;
+            float: right;
+            margin: 220px 60px 0px 0px;
+        }
+        .input-grp
+        {
+           //border:1px solid red;
+            width:285px;
+            display: inline-block;
+            height: 50px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .inp
+        {
+            width: 285px;
+            //border: 1px solid black;
+            box-sizing: border-box;
+            height: 50px;
+            color: dimgrey;
+            padding-left: 20px;
+        }
+        .input-grp span
+        {
+            position: absolute;
+            top:12px;
+            left:20px;
+            padding: 0;
+            transition: 0.5s;
+            pointer-events: none;
+        }
+        #eye.active
+        {
+            color: dodgerblue;
+        }
+        .input-grp .inp:focus ~ span,
+        .input-grp .inp:valid ~ span
+        {
+            top:-16px;
+            left:12px;
+            padding: 2px 4px;
+            border: 1px solid #000;
+            background: black;
+            color: white;
+            font-size: 12px;
+        }
+        
+        input[type=submit]
+        {
+            width:599px;
+            background-color: #041e42;
+            margin-left: 0px;
+            margin-top: 20px;
+            height: 50px;  
+            color:white;
+            font-size: 20px;
+            border: none;
+        }
+        input[type=submit]:hover
+        {
+            opacity: 0.8;
+        }
+        .bottomline
+        {
+            margin-left: 1px;
+            margin-top: 10px;
+            color: #757575;
+            float: left; 
+        }
+        .forgot_link
+        {
+            float: right;
+            margin-top: 10px;
+            margin-right: 1px;
+            text-decoration: underline;
+            color: #041e42;
+        }
+       
+        .btn-7
+        {
+            float: right;
+            margin-right: 75px;
+            margin-top: 30px;
+            width: 100px;
+            background-color: transparent;
+            color: black;
+            border: 2px solid #041e42;
+            height: 40px;    
+            border-radius: 4px;
+            transform: 0.5s ease-in-out;
+            cursor: pointer;
+            //line-height: 0px;
+           // position: relative;
+            display: block;
+            font-weight: bold;
+           
+            
+        }
+        .btn-7:before
+        {
+            content: '';
+            position: absolute;
+            left:0px;
+            top:0;
+            width:100%;
+            height:100%;
+            background: #041e42;
+            z-index: -1;
+            transition: transform 0.5s;
+            transform-origin: bottom right;
+            transform: scale(0);
+            
+        }
+        .btn-7:hover:before
+        {
+            transition: transform 0.5s;
+            transform-origin: top left;
+            transform: scale(1);
+        }
+       .box
+        {
+            margin-left: 50px;
+            margin-top: 30px;
+            float: left;
+            //border:1px solid red;
+            position: relative;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            background: #041e42;
+            overflow: hidden;
+            color: white;
+            border-radius: 4px;
+        }
+         .box .icon
+        {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            line-height: 50px;   
+        }
+        .box:hover .icon{ transform: scale(0)}
+        .box .details
+        {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            transform: scale(2);
+            opacity: 0;
+            background-color:crimson;
+            transition: 0.5s;
+        }
+        .box:hover .details
+        {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .details h3
+        {
+            font-size: 12px;;
+            margin: 0;
+            padding: 0;
+            line-height: 40px;
+        }
+       
+        .copyright
+        {
+            //font-weight: bold;
+            padding: 7px;
+            background-color: #041e42;
+            color: white;
+            float: left;
+            background-clip: text;
+            font-size: 12px;
+            margin:-2px 0px 0px 5px;
+        }
